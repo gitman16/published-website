@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="add content">
+  <meta name="keywords" content="add keywords, separate, with, commas">
+  <meta name="author" content="add your name">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>minecraft</title>
+  <link  rel="stylesheet"  href="bookstyle2.css">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="wrapper">
+<a href="index.html">
+</a>
+<div class="box banner">
+<br>
+<img src="images/mctitle.png" style="width:50%" alt="minecraft" >
+<br>
+welcome to the nether
+</div>    <!--  /  banner  -->
+<!--navigation -->
+<div class="box nav"> 
+<div class="topnav" id="myTopnav">
+<!--index -->
+<a href="index.html"> Homepage </a>
+<a href="nether.html" class="active">nether </a>
+<a href="theend.html">The End </a>
+<a href="contact.html">contact</a>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+<i class="fa fa-bars"></i>
+    </a>
+                         
+    </div></div> <!--/navigation box -->
+
+<div class="box logo">
+<img src="images/minecraft-blocck.png" alt="grassblock" style="width:100%"/>
+</div>    <!--  /  logo  --> 
+<!--<div class="parallax"></div>-->
+<div class="box main">
+    <h2> The Nether</h2> <p>The Nether (Nether Wastes in upcoming 1.16) is a hell-like dimension and biome that is linked to the Overworld by Nether portals. It is filled with rugged terrain, fire, seas of lava, columns of lava, Netherrack, unique ores, and unique hostile mobs. The Nether wastes in 1.16 is the same with the original Nether biome.</p>
+
+<!-- Trigger the Modal -->
+<img class="myImages" src="images/minecraft-1784541_1920.jpg" alt="ghasts in the nether" style="width:50%;">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+    <p>Pictured above is a screen shot from inside the nether biome and shows the landscape and the flying ghast mobs</p>
+    
+</div>    <!--  /  main  -->
+<div class="box side">
+magma slime:
+<div class="container-audio">
+<audio autoplay controls loop>
+<source src="music/Minecraft-jump3.mp3"
+    type="audio/mpeg">
+<source src="music/Minecraft-jump3.mp3"
+    type="audio/ogg">
+<source src="music/Minecraft-jump3.mp3"
+    type="audio/wav">
+</audio>
+    </div>
+zombie pigman:
+<div class="container-audio">
+<audio autoplay controls loop>
+<source src="music/Minecraft-zpig1.mp3"
+    type="audio/mpeg">
+<source src="music/Minecraft-zpig1.mp3"
+    type="audio/ogg">
+<source src="music/Minecraft-zpig1.mp3"
+    type="audio/wav">
+</audio>
+    </div>
+blaze:
+<div class="container-audio">
+<audio autoplay controls loop>
+<source src="music/Minecraft-breathe2.mp3"
+    type="audio/mpeg">
+<source src="music/Minecraft-breathe2.mp3"
+    type="audio/wav">
+<source src="music/Minecraft-breathe2.mp3"
+    type="audio/ogg">
+</audio>
+    </div>
+</div>    <!--  /  side  -->
+<div class="box footer">
+~CC Glen Smith 2020</div>    <!--  /  footer  -->
+
+
+
+</div>   <!--  /  wrapper  -->
+<!--link to java script-->
+<script> 
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+</body>
